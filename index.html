@@ -1,338 +1,286 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="theme-color" content="#160504">
-  <meta name="description" content="GOGA SARKAR CHA RAJA — Ganesh Aagman">
+  <meta name="theme-color" content="#170504">
+  <meta name="description" content="GOGA SARKAR CHA RAJA - Ganesh Aagman">
 
-  <title>GOGA SARKAR CHA RAJA | Ganesh Aagman</title>
+  <title>GOGA SARKAR CHA RAJA</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Playfair+Display:wght@500;600;700&family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  >
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Playfair+Display:wght@500;600;700&family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<main id="page" class="page">
+  <div id="page">
 
-  <!-- ================= OPENING SCREEN ================= -->
+    <!-- ================= OPENING SCREEN ================= -->
 
-  <section id="opening" class="opening">
+    <section id="opening">
 
-    <div class="opening-glow"></div>
-    <div class="particles"></div>
+      <div class="opening-glow"></div>
+      <div class="particles"></div>
 
-    <button
-      id="openButton"
-      class="logo-button"
-      type="button"
-      aria-label="Open invitation"
-    >
+      <button id="openButton" type="button" aria-label="Open invitation">
 
-      <span class="logo-ring ring-one"></span>
-      <span class="logo-ring ring-two"></span>
-      <span class="logo-pulse"></span>
+        <span class="logo-ring ring1"></span>
+        <span class="logo-ring ring2"></span>
 
-      <img
-        src="goga-sarkar-logo.png"
-        alt="GOGA SARKAR CHA RAJA"
-      >
+        <img
+          src="goga-sarkar-logo.png"
+          alt="GOGA SARKAR CHA RAJA"
+        >
 
-    </button>
+      </button>
 
-    <div class="open-copy">
+      <div class="open-text">
+        <div>TAP TO OPEN</div>
+        <small>GANPATI BAPPA MORYA</small>
+      </div>
 
-      <p class="open-title">TAP TO OPEN</p>
+    </section>
 
-      <span class="open-subtitle">
-        GANPATI BAPPA MORYA
-      </span>
+
+    <!-- ================= DOORS ================= -->
+
+    <div id="doors">
+
+      <div class="door left-door"></div>
+      <div class="door right-door"></div>
+
+      <div class="door-light"></div>
 
     </div>
 
-  </section>
+
+    <!-- ================= INVITATION ================= -->
+
+    <section id="invitation">
+
+      <div class="content">
+
+        <p class="mantra">
+          ॥ श्री गणेशाय नमः ॥
+        </p>
+
+        <div class="ornament">
+          <span></span>
+          <b>✦</b>
+          <span></span>
+        </div>
 
 
-  <!-- ================= CINEMATIC DOORS ================= -->
+        <!-- GANESH IMAGE -->
 
-  <div id="doors" class="doors">
+        <div class="ganesh-container">
 
-    <div class="door door-left">
-      <div class="door-pattern"></div>
-      <div class="door-edge"></div>
-    </div>
+          <div class="gold-halo"></div>
 
-    <div class="door door-right">
-      <div class="door-pattern"></div>
-      <div class="door-edge"></div>
-    </div>
+          <img
+            class="ganesh-image"
+            src="ganesh-invitation.png"
+            alt="Lord Ganesha"
+          >
 
-    <div class="door-light"></div>
+        </div>
 
-    <div class="petal-layer"></div>
+
+        <!-- TITLE -->
+
+        <div class="title">
+
+          <p class="eyebrow">
+            YOU ARE INVITED TO THE DIVINE ARRIVAL OF
+          </p>
+
+          <h1>
+            GOGA SARKAR
+            <span>CHA RAJA</span>
+          </h1>
+
+          <div class="gold-line"></div>
+
+          <h2>GANESH AAGMAN</h2>
+
+          <p class="message">
+            With hearts full of devotion, we invite you to welcome our beloved
+            Bappa and celebrate His divine arrival with us.
+          </p>
+
+        </div>
+
+
+        <!-- EVENT DETAILS -->
+
+        <div class="event-card">
+
+          <div class="event-item">
+            <span>DATE</span>
+            <strong>12 SEPTEMBER 2026</strong>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="event-item">
+            <span>TIME</span>
+            <strong>7:00 PM</strong>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="event-item">
+            <span>VENUE</span>
+            <strong>DKM HOSPITAL</strong>
+          </div>
+
+        </div>
+
+
+        <!-- DIRECTIONS -->
+
+        <a
+          class="directions"
+          href="https://www.google.com/maps/search/?api=1&query=DKM%20Hospital"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>⌖</span>
+          GET DIRECTIONS
+          <span>↗</span>
+        </a>
+
+
+        <!-- INSTAGRAM -->
+
+        <a
+          class="instagram"
+          href="https://www.instagram.com/goga_sarkar_cha_raja___/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="insta-icon">◎</span>
+          FOLLOW US ON INSTAGRAM
+          <span>↗</span>
+        </a>
+
+
+        <!-- ================= CHIEF GUESTS ================= -->
+
+        <section class="guests">
+
+          <div class="guest-heading">
+
+            <span></span>
+
+            <div>
+              <small>OUR ESTEEMED</small>
+              <h3>CHIEF GUESTS</h3>
+            </div>
+
+            <span></span>
+
+          </div>
+
+
+          <!-- GUEST 1 -->
+
+          <article class="guest-card">
+
+            <div class="guest-number">01</div>
+
+            <div class="guest-info">
+
+              <h4>હિતેષભાઈ ચૌહાણ</h4>
+
+              <p>
+                ધર્મજાગરણ સમયનવ રાંદેર ભાગ<br>
+                નિધિ આયામ પ્રમુખ
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <!-- GUEST 2 -->
+
+          <article class="guest-card">
+
+            <div class="guest-number">02</div>
+
+            <div class="guest-info">
+
+              <h4>અરવિંદસિંહ દરબાર</h4>
+
+              <p>
+                ધર્મજાગરણ સમયનવ સુરત મહાનગર પ્રમુખ
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <!-- GUEST 3 -->
+
+          <article class="guest-card">
+
+            <div class="guest-number">03</div>
+
+            <div class="guest-info">
+
+              <h4>સતીશભાઈ ફણસિયા</h4>
+
+              <p>
+                સામાજિક સમરસતા રાંદેર ભાગ
+              </p>
+
+            </div>
+
+          </article>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+          <div class="footer-title">
+            GANPATI BAPPA MORYA
+          </div>
+
+          <div class="footer-symbol">
+            ✦ &nbsp; ॐ &nbsp; ✦
+          </div>
+
+          <small>
+            WITH DEVOTION • WITH LOVE • WITH BAPPA
+          </small>
+
+        </footer>
+
+      </div>
+
+    </section>
+
+
+    <!-- MUSIC -->
+
+    <audio id="bgMusic" loop preload="auto">
+      <source src="music.mp3" type="audio/mpeg">
+    </audio>
 
   </div>
 
-
-  <!-- ================= INVITATION ================= -->
-
-  <section id="invitation" class="invitation">
-
-    <div class="ambient ambient-one"></div>
-    <div class="ambient ambient-two"></div>
-
-    <div class="content-shell">
-
-      <!-- MANTRA -->
-
-      <p class="mantra">
-        ॥ श्री गणेशाय नमः ॥
-      </p>
-
-      <div class="ornament">
-        <span></span>
-        <i>✦</i>
-        <span></span>
-      </div>
-
-
-      <!-- GANESH -->
-
-      <div class="ganesh-wrap">
-
-        <div class="halo-main"></div>
-        <div class="rays"></div>
-
-        <img
-          class="ganesh-image"
-          src="ganesh-invitation.png"
-          alt="Lord Ganesha"
-        >
-
-      </div>
-
-
-      <!-- TITLE -->
-
-      <div class="title-block">
-
-        <p class="eyebrow">
-          YOU ARE INVITED TO THE DIVINE ARRIVAL OF
-        </p>
-
-        <h1>
-          GOGA SARKAR
-          <span>CHA RAJA</span>
-        </h1>
-
-        <div class="gold-line"></div>
-
-        <h2>GANESH AAGMAN</h2>
-
-        <p class="message">
-          With hearts full of devotion, we invite you to welcome our beloved
-          Bappa and celebrate His divine arrival with us.
-        </p>
-
-      </div>
-
-
-      <!-- EVENT DETAILS -->
-
-      <div class="event-card">
-
-        <div class="event-item">
-          <span class="event-label">DATE</span>
-          <strong>12 SEPTEMBER 2026</strong>
-        </div>
-
-        <div class="event-divider"></div>
-
-        <div class="event-item">
-          <span class="event-label">TIME</span>
-          <strong>7:00 PM</strong>
-        </div>
-
-        <div class="event-divider"></div>
-
-        <div class="event-item">
-          <span class="event-label">VENUE</span>
-          <strong>DKM HOSPITAL</strong>
-        </div>
-
-      </div>
-
-
-      <!-- DIRECTIONS -->
-
-      <a
-        class="directions-btn"
-        href="https://www.google.com/maps/search/?api=1&query=DKM%20Hospital"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <span>⌖</span>
-        GET DIRECTIONS
-        <span>↗</span>
-      </a>
-
-
-      <!-- ================= INSTAGRAM ================= -->
-
-      <a
-        class="instagram-btn"
-        href="https://www.instagram.com/goga_sarkar_cha_raja___/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-
-        <span class="instagram-icon">◎</span>
-
-        <span>
-          FOLLOW US ON INSTAGRAM
-        </span>
-
-        <span class="instagram-arrow">↗</span>
-
-      </a>
-
-
-      <!-- ================= CHIEF GUESTS ================= -->
-
-      <section class="chief-guests">
-
-        <div class="guest-heading">
-
-          <span class="heading-line"></span>
-
-          <div>
-            <p class="guest-small-title">
-              OUR ESTEEMED
-            </p>
-
-            <h3>
-              CHIEF GUESTS
-            </h3>
-          </div>
-
-          <span class="heading-line"></span>
-
-        </div>
-
-
-        <!-- GUEST 1 -->
-
-        <article class="guest-card">
-
-          <div class="guest-number">01</div>
-
-          <div class="guest-content">
-
-            <h4>
-              હિતેષભાઈ ચૌહાણ
-            </h4>
-
-            <p>
-              ધર્મજાગરણ સમયનવ રાંદેર ભાગ<br>
-              નિધિ આયામ પ્રમુખ
-            </p>
-
-          </div>
-
-        </article>
-
-
-        <!-- GUEST 2 -->
-
-        <article class="guest-card">
-
-          <div class="guest-number">02</div>
-
-          <div class="guest-content">
-
-            <h4>
-              અરવિંદસિંહ દરબાર
-            </h4>
-
-            <p>
-              ધર્મજાગરણ સમયનવ સુરત મહાનગર પ્રમુખ
-            </p>
-
-          </div>
-
-        </article>
-
-
-        <!-- GUEST 3 -->
-
-        <article class="guest-card">
-
-          <div class="guest-number">03</div>
-
-          <div class="guest-content">
-
-            <h4>
-              સતીશભાઈ ફણસિયા
-            </h4>
-
-            <p>
-              સામાજિક સમરસતા રાંદેર ભાગ
-            </p>
-
-          </div>
-
-        </article>
-
-      </section>
-
-
-      <!-- FOOTER -->
-
-      <div class="footer">
-
-        <p class="blessing">
-          GANPATI BAPPA MORYA
-        </p>
-
-        <div class="bottom-ornament">
-          ✦ &nbsp; ॐ &nbsp; ✦
-        </div>
-
-        <p class="footer-note">
-          WITH DEVOTION • WITH LOVE • WITH BAPPA
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- ================= MUSIC ================= -->
-
-  <audio
-    id="bgMusic"
-    preload="auto"
-    loop
-  >
-    <source src="music.mp3" type="audio/mpeg">
-  </audio>
-
-</main>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
-```
