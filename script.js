@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       page.classList.add("is-open");
 
-    }, 450);
+    }, 2000);
 
 
     /* ================= REMOVE DOORS ================= */
