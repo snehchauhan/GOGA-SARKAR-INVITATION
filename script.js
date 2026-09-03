@@ -1,54 +1,72 @@
-```javascript
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
 
   const page = document.getElementById("page");
   const openButton = document.getElementById("openButton");
-  const bgMusic = document.getElementById("bgMusic");
+  const opening = document.getElementById("opening");
+  const doors = document.getElementById("doors");
+  const music = document.getElementById("bgMusic");
 
   if (!page || !openButton) {
-    console.error("Invitation elements not found.");
+    console.error("Invitation setup failed: required elements are missing.");
     return;
   }
 
   let opened = false;
 
-  openButton.addEventListener("click", () => {
+  openButton.addEventListener("click", function () {
 
-    if (opened) return;
+    if (opened) {
+      return;
+    }
 
     opened = true;
 
-    /*
-     * Start music after the user's tap.
-     * This is important because mobile browsers
-     * normally block automatic audio playback.
-     */
+    /* ================= MUSIC ================= */
 
-    if (bgMusic) {
+    if (music) {
 
-      bgMusic.volume = 0.65;
+      music.volume = 0.65;
 
-      bgMusic.play().catch((error) => {
-        console.log("Music could not start:", error);
-      });
+      const playMusic = music.play();
 
+      if (playMusic !== undefined) {
+
+        playMusic.catch(function () {
+          console.log("Music playback was blocked by the browser.");
+        });
+
+      }
     }
 
-    /*
-     * Start cinematic doors.
-     */
+
+    /* ================= START DOOR ANIMATION ================= */
 
     page.classList.add("is-opening");
 
-    /*
-     * Reveal invitation.
-     */
 
-    setTimeout(() => {
+    /* ================= REVEAL INVITATION ================= */
+
+    setTimeout(function () {
+
       page.classList.add("is-open");
-    }, 950);
+
+    }, 450);
+
+
+    /* ================= REMOVE DOORS ================= */
+
+    setTimeout(function () {
+
+      if (doors) {
+        doors.style.display = "none";
+      }
+
+      if (opening) {
+        opening.style.pointerEvents = "none";
+      }
+
+    }, 1500);
 
   });
 
 });
-```
